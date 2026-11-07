@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en" class="fx-on"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Contact Us | Negros Occidental High School (NOHS)</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Libre+Baskerville:wght@700&amp;display=swap"><link rel="stylesheet" href="assets/style.css"></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<canvas id="particles" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- Notice bar: update for enrollment schedules, exam dates, weather advisories -->
+<div class="notice" id="notice" role="region" aria-label="School notices">
+ <div class="wrap">
+  <p><strong>Notice:</strong> Enrollment for the next school year is open. Check the schedule per grade level. <a href="index.html#news">Read more</a></p>
+  <button type="button" id="dismiss" aria-label="Dismiss notice">Dismiss</button>
+ </div>
+</div>
+
+<header class="site" id="top">
+ <div class="wrap bar">
+  <a class="logo mag" href="index.html" aria-label="NOHS home">
+   <img class="seal" src="assets/img/b31be40996.webp" alt="" width="52" height="52">
+   <span><b>NOHS</b><small>Negros Occidental High School</small></span>
+  </a>
+  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary">
+   <ul>
+    <li><a href="index.html" data-nav="home" class="mag">Home</a></li>
+    <li><a href="about.html" data-nav="about" class="mag">About</a></li>
+    <li><a href="gallery.html" data-nav="gallery" class="mag">Gallery</a></li>
+    <li><a href="members.html" data-nav="members" class="mag">Members</a></li>
+    <li><a href="contact.html" data-nav="contact" aria-current="page" class="mag">Contact Us</a></li>
+   </ul>
+  </nav>
+  <div class="quick">
+   <a class="btn sm mag" href="contact.html">Enrollment Portal</a>
+   <a class="btn line sm mag" href="contact.html">Student / Faculty Log In</a>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<div class="page active" id="page-contact" data-page="contact">
+<img class="page-banner" src="assets/img/2f546d2822.jpg" alt="Contact Us" width="1584" height="396">
+<section class="gray" id="contact" aria-labelledby="ci-h">
+  <div class="wrap">
+   <div class="head"><h2 id="ci-h">Contact us</h2><p>Have questions, concerns, or inquiries? Get in touch with Negros Occidental High School through any of the contact details below.</p></div>
+   <div class="cgrid">
+    <article class="ccard">
+     <div class="ico" aria-hidden="true">✉</div>
+     <h3>Email</h3>
+     <p>Write to the school office.</p>
+     <a class="val" href="mailto:nohsbacolod@yahoo.com">nohsbacolod@yahoo.com</a>
+    </article>
+    <article class="ccard">
+     <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.9s-1.3-.2-2.5-.2c-2.6 0-4.2 1.5-4.2 4.3v2.5H7.4v3.3h2.8V22z"></path></svg></div>
+     <h3>Facebook</h3>
+     <p>Follow us for news and announcements.</p>
+     <div class="stack">
+      <a class="val" href="https://www.facebook.com/The.Reflector.NOHS" target="_blank" rel="noopener noreferrer">The Reflector</a>
+      <a class="val" href="https://www.facebook.com/thenohsguild" target="_blank" rel="noopener noreferrer">NOHS Guild</a>
+      <a class="val" href="https://www.facebook.com/NOHS.AngAninag" target="_blank" rel="noopener noreferrer">Ang Aninag</a>
+     </div>
+    </article>
+    <article class="ccard">
+     <div class="ico" aria-hidden="true">☎</div>
+     <h3>Phone</h3>
+     <p>Call during school hours.</p>
+     <div class="stack">
+      <a class="val" href="tel:+63344339377">+63 34 433 9377</a>
+      <a class="val" href="tel:+63344337506">+63 34 433 7506</a>
+     </div>
+    </article>
+    <article class="ccard loc">
+     <div class="ico" aria-hidden="true">📍</div>
+     <h3>Location</h3>
+     <address>Araneta Street / Paglaum Road<br>Bacolod City, Negros Occidental 6100</address>
+    </article>
+   </div>
+  </div>
+ </section>
+
+<section id="message" aria-labelledby="msg-h">
+  <div class="wrap msg-wrap">
+   <div class="head">
+    <h2 id="msg-h">Send us a message</h2>
+    <p>Fill out the form and our staff will review your message. For urgent concerns, please call the school directly.</p>
+   </div>
+   <div class="form-card">
+    <h3>Message form</h3>
+    <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr"> required</span> are required.</p>
+    <!-- Backend hookup: set action to your form endpoint/service and method="post"; remove the JS preventDefault demo in the script below. -->
+    <form id="contactForm" action="#" method="post" novalidate="">
+     <div class="row">
+      <div class="field">
+       <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+       <input id="name" name="name" type="text" autocomplete="name" placeholder="Name" required="" aria-describedby="name-err">
+       <div class="err" id="name-err">Please enter your full name.</div>
+      </div>
+      <div class="field">
+       <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+       <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required="" aria-describedby="email-err">
+       <div class="err" id="email-err">Please enter a valid email address.</div>
+      </div>
+     </div>
+     <div class="field">
+      <label for="subject">Subject <span class="req" aria-hidden="true">*</span></label>
+      <input id="subject" name="subject" type="text" placeholder="What is your message about?" required="" aria-describedby="subject-err">
+      <div class="err" id="subject-err">Please enter a subject.</div>
+     </div>
+     <div class="field">
+      <label for="message-text">Message <span class="req" aria-hidden="true">*</span></label>
+      <textarea id="message-text" name="message" placeholder="Type your message here..." required="" aria-describedby="message-err"></textarea>
+      <div class="err" id="message-err">Please write a message.</div>
+     </div>
+     <div class="form-actions">
+      <button class="btn big mag" type="submit">Send Message</button>
+     </div>
+     <div class="status" id="formStatus" role="status" aria-live="polite" hidden></div>
+    </form>
+   </div>
+  </div>
+ </section>
+</div>
+</main>
+
+<!-- ===== LIGHTBOX (filled automatically from the clicked card) ===== -->
+
+
+<button type="button" id="audioBtn" aria-expanded="false" aria-controls="audioPanel" aria-label="Audio settings" title="Music and sound volume" class="mag">
+ <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"></path><path d="M1 14h6M9 8h6M17 16h6"></path></svg>
+ <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<div id="cur" aria-hidden="true"></div>
+<footer class="site" id="footer">
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <h2>Negros Occidental High School</h2>
+    <address>Araneta Street / Paglaum Road<br>Bacolod City, Negros Occidental 6100<br>Phone: <a href="tel:+63344339377">+63 34 433 9377</a> / <a href="tel:+63344337506">+63 34 433 7506</a><br><a href="mailto:nohsbacolod@yahoo.com">nohsbacolod@yahoo.com</a></address>
+   </div>
+   <nav aria-label="Quick links">
+    <h2>Quick links</h2>
+    <ul>
+     <li><a href="contact.html">Enrollment Portal</a></li>
+     <li><a href="index.html#academics">Academic Programs</a></li>
+     <li><a href="index.html#news">News and Announcements</a></li>
+     <li><a href="gallery.html">Photo Gallery</a></li>
+     <li><a href="contact.html">Student / Faculty Log In</a></li>
+    </ul>
+   </nav>
+   <div>
+    <h2>Follow NOHS</h2>
+    <div class="social">
+     <a href="#" aria-label="Facebook">f</a>
+     <a href="#" aria-label="YouTube">yt</a>
+     <a href="#" aria-label="Instagram">ig</a>
+    </div>
+   </div>
+  </div>
+  <div class="legal">
+   <span>© 2026 Negros Occidental High School. All rights reserved.</span>
+   <span><a href="#">Privacy notice</a> &nbsp; <a href="#">Accessibility</a></span>
+  </div>
+ </div>
+</footer>
+
+
+
+
+
+
+
+<script>window.NOHS_MULTI=true;</script>
+
+<script src="assets/nohs.js"></script>
+<script src="assets/contact.js"></script>
+</body></html>

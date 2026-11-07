@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en" class="fx-on"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Negros Occidental High School (NOHS)</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Libre+Baskerville:wght@700&amp;display=swap"><link rel="stylesheet" href="assets/style.css"></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<canvas id="particles" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- Notice bar: update for enrollment schedules, exam dates, weather advisories -->
+<div class="notice" id="notice" role="region" aria-label="School notices">
+ <div class="wrap">
+  <p><strong>Notice:</strong> Enrollment for the next school year is open. Check the schedule per grade level. <a href="#news">Read more</a></p>
+  <button type="button" id="dismiss" aria-label="Dismiss notice">Dismiss</button>
+ </div>
+</div>
+
+<header class="site" id="top">
+ <div class="wrap bar">
+  <a class="logo mag" href="index.html" aria-label="NOHS home">
+   <img class="seal" src="assets/img/b31be40996.webp" alt="" width="52" height="52">
+   <span><b>NOHS</b><small>Negros Occidental High School</small></span>
+  </a>
+  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary">
+   <ul>
+    <li><a href="index.html" data-nav="home" aria-current="page" class="mag">Home</a></li>
+    <li><a href="about.html" data-nav="about" class="mag">About</a></li>
+    <li><a href="gallery.html" data-nav="gallery" class="mag">Gallery</a></li>
+    <li><a href="members.html" data-nav="members" class="mag">Members</a></li>
+    <li><a href="contact.html" data-nav="contact" class="mag">Contact Us</a></li>
+   </ul>
+  </nav>
+  <div class="quick">
+   <a class="btn sm mag" href="contact.html">Enrollment Portal</a>
+   <a class="btn line sm mag" href="contact.html">Student / Faculty Log In</a>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<div class="page active" id="page-home" data-page="home">
+<img class="page-banner" src="assets/img/1a40d5adca.jpg" alt="Negros Occidental High School - Nurturing a Culture of Excellence since 1902" width="1584" height="396">
+<section class="hero" id="home" style="padding:0">
+  <div class="wrap">
+   <div>
+    <h1>Tradition that teaches. <span>Excellence that lasts.</span></h1>
+    <p class="lead">For generations, Negros Occidental High School has helped students in Grades 7 to 12 grow into capable, principled and service-minded Filipinos.</p>
+    <div class="cta">
+     <a class="btn mag" href="#academics">Explore Academic Programs</a>
+     <a class="btn line mag" href="gallery.html">Take a Virtual Tour</a>
+    </div>
+   </div>
+   <!-- Hero visual: school photo -->
+   <div class="panel"><img class="photo-hero" src="assets/img/df2e5cc9be.jpg" alt="Front of the Negros Occidental High School main building, with its arched porch, statues and tall palm trees under a blue sky" width="516" height="387"></div>
+  </div>
+ </section>
+
+<section class="stats" id="stats" style="padding-top:0">
+  <div class="wrap">
+   <ul>
+    <li><b>Grades 7-12</b><span>Junior and Senior High School on one campus</span></li>
+    <li><b>15</b><span>Active student clubs and organizations</span></li>
+    <li><b>400+</b><span>Teachers or staff</span></li>
+    <li><b>9,000+</b><span>Learners in Grades 7 to 12</span></li>
+   </ul>
+  </div>
+ </section>
+
+<section class="gray" id="academics">
+  <div class="wrap">
+   <div class="head"><h2>Academic programs</h2><p>A steady path from Grade 7 to graduation, with choices that match each learner's goals.</p></div>
+   <div class="progs">
+    <article class="prog">
+     <p class="tag">Grades 7-10</p>
+     <h3>Junior High School</h3>
+     <p>A strong core curriculum that builds reading, math, science and character.</p>
+     <ul>
+      <li>Core subjects aligned with the national curriculum</li>
+      <li>Science, Technology and Engineering program</li>
+      <li>Special Program in the Arts and Sports</li>
+      <li>Guidance, values education and student leadership</li>
+     </ul>
+     <a class="btn mag" href="contact.html">Learn about JHS</a>
+    </article>
+    <article class="prog shs">
+     <p class="tag">Grades 11-12</p>
+     <h3>Senior High School</h3>
+     <p>Pick an academic strand or technical-vocational track and prepare for college, work or business.</p>
+     <ul class="chips" aria-label="Academic strands">
+      <li>STEM</li><li>ABM</li><li>HUMSS</li><li>GAS</li><li>TVL</li>
+     </ul>
+     <p style="margin:0 0 1rem">STEM for science and engineering, ABM for business, HUMSS for social sciences, GAS for a general path, and TVL for hands-on technical skills.</p>
+     <a href="contact.html">Compare strands and tracks</a>
+    </article>
+   </div>
+  </div>
+ </section>
+
+<section id="news">
+  <div class="wrap two">
+   <div>
+    <div class="head"><h2>News and announcements</h2></div>
+    <div class="newsgrid">
+     <article class="news"><img class="nimg" src="assets/img/ca5565b262.jpg" alt="Students and a marching band performing in formation on the NOHS campus in front of the school building" width="720" height="631" loading="lazy" style="object-position:50% 40%"><div class="b"><time datetime="2026-10-01">October 1, 2026</time><h3><a href="#news">Varsity team wins provincial meet</a></h3><p>Our athletes brought home medals in track and field and volleyball.</p></div></article>
+     <article class="news"><img class="nimg" src="assets/img/5e2f46760c.jpg" alt="A pencil resting on a printed math exam sheet with multiple-choice questions" width="600" height="456" loading="lazy" style="object-position:50% 50%"><div class="b"><time datetime="2026-09-24">September 24, 2026</time><h3><a href="#news">Quarterly exam schedule posted</a></h3><p>Download the schedule and reminders for each grade level.</p></div></article>
+     <article class="news"><img class="nimg" src="assets/img/f136245042.jpg" alt="Stage screen announcing the District Science Fair 2026 and its theme" width="720" height="480" loading="lazy" style="object-position:50% 45%"><div class="b"><time datetime="2026-09-17">September 17, 2026</time><h3><a href="#news">Science fair seeks student entries</a></h3><p>Teams from Grades 7 to 12 may submit project proposals.</p></div></article>
+     <article class="news"><img class="nimg" src="assets/img/6b049cb510.jpg" alt="Peer Facilitators club members in school uniform smiling at the Career Corner and Care Desk booth" width="720" height="509" loading="lazy" style="object-position:50% 35%"><div class="b"><time datetime="2026-09-10">September 10, 2026</time><h3><a href="#news">Club fair welcomes new members</a></h3><p>Meet student leaders and sign up for this year's clubs.</p></div></article>
+    </div>
+   </div>
+   <aside class="events" aria-labelledby="ev">
+    <h2 id="ev" style="font-size:1.35rem">Upcoming events</h2>
+    <ol>
+     <li><div class="date" aria-hidden="true"><small>OCT</small>16</div><div><strong>Parent-teacher conference</strong><p>Grades 7 to 12, 1:00 pm</p></div></li>
+     <li><div class="date" aria-hidden="true"><small>OCT</small>29</div><div><strong>Intramurals opening</strong><p>School grounds, 7:30 am</p></div></li>
+     <li><div class="date" aria-hidden="true"><small>NOV</small>12</div><div><strong>Career orientation for SHS</strong><p>Gymnasium, 9:00 am</p></div></li>
+    </ol>
+    <p style="margin:1rem 0 0"><a href="#news">View the full calendar</a></p>
+   </aside>
+  </div>
+ </section>
+
+<section class="gray welcome" id="welcome">
+  <div class="wrap">
+   <!-- Principal photo -->
+   <figure class="pfig"><img class="pphoto" src="assets/img/b88337405e.jpg" alt="Dr. Cheryl Juson Tondo speaking into a microphone at the Work Immersion Fair" width="1200" height="800"><figcaption>Photo: Janessa Alojado, The Reflector</figcaption></figure>
+   <div>
+    <h2>A welcome from our principal</h2>
+    <blockquote>Every learner who walks through our gates carries a promise worth keeping.</blockquote>
+    <p>Welcome to NOHS. Our teachers and staff work together so that every student feels known, challenged and supported. We invite you to visit, ask questions and see how our community learns and serves together.</p>
+    <p><strong>Dr. Cheryl Juson Tondo (Cheryl Tondo, PhD)</strong><br><span style="color:var(--muted)">School Principal</span></p>
+   </div>
+  </div>
+ </section>
+
+</div>
+</main>
+
+<!-- ===== LIGHTBOX (filled automatically from the clicked card) ===== -->
+
+
+<button type="button" id="audioBtn" aria-expanded="false" aria-controls="audioPanel" aria-label="Audio settings" title="Music and sound volume" class="mag">
+ <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"></path><path d="M1 14h6M9 8h6M17 16h6"></path></svg>
+ <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<div id="cur" aria-hidden="true"></div>
+<footer class="site" id="footer">
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <h2>Negros Occidental High School</h2>
+    <address>Araneta Street / Paglaum Road<br>Bacolod City, Negros Occidental 6100<br>Phone: <a href="tel:+63344339377">+63 34 433 9377</a> / <a href="tel:+63344337506">+63 34 433 7506</a><br><a href="mailto:nohsbacolod@yahoo.com">nohsbacolod@yahoo.com</a></address>
+   </div>
+   <nav aria-label="Quick links">
+    <h2>Quick links</h2>
+    <ul>
+     <li><a href="contact.html">Enrollment Portal</a></li>
+     <li><a href="#academics">Academic Programs</a></li>
+     <li><a href="#news">News and Announcements</a></li>
+     <li><a href="gallery.html">Photo Gallery</a></li>
+     <li><a href="contact.html">Student / Faculty Log In</a></li>
+    </ul>
+   </nav>
+   <div>
+    <h2>Follow NOHS</h2>
+    <div class="social">
+     <a href="#" aria-label="Facebook">f</a>
+     <a href="#" aria-label="YouTube">yt</a>
+     <a href="#" aria-label="Instagram">ig</a>
+    </div>
+   </div>
+  </div>
+  <div class="legal">
+   <span>© 2026 Negros Occidental High School. All rights reserved.</span>
+   <span><a href="#">Privacy notice</a> &nbsp; <a href="#">Accessibility</a></span>
+  </div>
+ </div>
+</footer>
+
+
+
+
+
+
+
+<script>window.NOHS_MULTI=true;</script>
+
+<script src="assets/nohs.js"></script>
+</body></html>

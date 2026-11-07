@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="en" class="fx-on"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Gallery | Negros Occidental High School (NOHS)</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Libre+Baskerville:wght@700&amp;display=swap"><link rel="stylesheet" href="assets/style.css"></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<canvas id="particles" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- Notice bar: update for enrollment schedules, exam dates, weather advisories -->
+<div class="notice" id="notice" role="region" aria-label="School notices">
+ <div class="wrap">
+  <p><strong>Notice:</strong> Enrollment for the next school year is open. Check the schedule per grade level. <a href="index.html#news">Read more</a></p>
+  <button type="button" id="dismiss" aria-label="Dismiss notice">Dismiss</button>
+ </div>
+</div>
+
+<header class="site" id="top">
+ <div class="wrap bar">
+  <a class="logo mag" href="index.html" aria-label="NOHS home">
+   <img class="seal" src="assets/img/b31be40996.webp" alt="" width="52" height="52">
+   <span><b>NOHS</b><small>Negros Occidental High School</small></span>
+  </a>
+  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary">
+   <ul>
+    <li><a href="index.html" data-nav="home" class="mag">Home</a></li>
+    <li><a href="about.html" data-nav="about" class="mag">About</a></li>
+    <li><a href="gallery.html" data-nav="gallery" aria-current="page" class="mag">Gallery</a></li>
+    <li><a href="members.html" data-nav="members" class="mag">Members</a></li>
+    <li><a href="contact.html" data-nav="contact" class="mag">Contact Us</a></li>
+   </ul>
+  </nav>
+  <div class="quick">
+   <a class="btn sm mag" href="contact.html">Enrollment Portal</a>
+   <a class="btn line sm mag" href="contact.html">Student / Faculty Log In</a>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<div class="page active" id="page-gallery" data-page="gallery">
+<img class="page-banner" src="assets/img/307b33c8e7.jpg" alt="Gallery" width="1584" height="396">
+<section class="gray" id="gallery">
+  <div class="wrap">
+
+      <div class="head">
+    <h2>Photo Gallery</h2>
+    <p>Explore memorable moments, activities, events, and experiences captured through photographs.</p>
+   </div>
+
+      <ul class="ggrid" aria-label="Photo gallery">
+
+    <!-- GALLERY PHOTO 1 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: A Memorable Moment">
+      <img src="assets/img/b6dba09771.jpg" alt="A Memorable Moment - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>A Memorable Moment</h3>
+      <p>A special moment captured and preserved as a memory.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 2 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: School Activity">
+      <img src="assets/img/e831087f62.jpg" alt="School Activity - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>School Activity</h3>
+      <p>A memorable moment from a school activity.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 3 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Campus Life">
+      <img src="assets/img/dcc526fa94.png" alt="Campus Life - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Campus Life</h3>
+      <p>A glimpse of everyday life on the school campus.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 4 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Special Event">
+      <img src="assets/img/fa68303f36.jpg" alt="Special Event - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Special Event</h3>
+      <p>A highlight from a special event shared with the school community.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 5 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Learning Together">
+      <img src="assets/img/6f57faac0b.jpg" alt="Learning Together - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Learning Together</h3>
+      <p>A moment of learning, curiosity, and collaboration.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 6 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: A Day to Celebrate">
+      <img src="assets/img/5f22d69f91.jpg" alt="A Day to Celebrate - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>A Day to Celebrate</h3>
+      <p>A joyful occasion remembered by students, teachers, and staff.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 7 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Teamwork in Action">
+      <img src="assets/img/e548855759.jpg" alt="Teamwork in Action - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Teamwork in Action</h3>
+      <p>A moment that reflects cooperation and shared effort.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 8 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Proud Achievement">
+      <img src="assets/img/107b11db3a.jpg" alt="Proud Achievement - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Proud Achievement</h3>
+      <p>A proud moment recognizing hard work and dedication.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 9 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Community Spirit">
+      <img src="assets/img/032fb900a1.jpg" alt="Community Spirit - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Community Spirit</h3>
+      <p>A moment that brings the NOHS community together.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 10 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Behind the Scenes">
+      <img src="assets/img/04f82a88d5.jpg" alt="Behind the Scenes - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Behind the Scenes</h3>
+      <p>A look at the preparation and effort behind a school event.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 11 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Shared Experience">
+      <img src="assets/img/0760cc67d1.jpg" alt="Shared Experience - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Shared Experience</h3>
+      <p>An experience shared and enjoyed by the whole group.</p>
+     </div>
+    </li>
+
+    <!-- GALLERY PHOTO 12 -->
+    <li class="gcard">
+     <button type="button" class="gthumb" aria-haspopup="dialog" aria-label="View larger photo: Moments to Keep">
+      <img src="assets/img/546506906b.jpg" alt="Moments to Keep - NOHS photo gallery" width="800" height="600" loading="lazy">
+     </button>
+     <div class="gbody">
+      <h3>Moments to Keep</h3>
+      <p>One more memory worth keeping for years to come.</p>
+     </div>
+    </li>
+
+   </ul>
+
+      <div class="gvideo">
+    <a class="btn mag" href="https://www.youtube.com/embed/caIWlbTtD58?si=4vAez2t4AqJYNQqU&amp;fbclid=IwY2xjawU2ymdleHRuA2FlbQIxMABwZG9mBWJyaWQRMUFjWE1vWHFtWEFqN21FdVFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeT_RuypasQzpmA-IK_JHppskzRhDXTOtD-H5zpdi8irYSrnYhVa4HFuSl41A_aem_k663fejaOz-5spJ92TqZVQ" target="_blank" rel="noopener noreferrer">▶ Watch Video</a>
+   </div>
+  </div>
+ </section>
+
+</div>
+</main>
+
+<!-- ===== LIGHTBOX (filled automatically from the clicked card) ===== -->
+
+
+<button type="button" id="audioBtn" aria-expanded="false" aria-controls="audioPanel" aria-label="Audio settings" title="Music and sound volume" class="mag">
+ <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"></path><path d="M1 14h6M9 8h6M17 16h6"></path></svg>
+ <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<div id="cur" aria-hidden="true"></div>
+<footer class="site" id="footer">
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <h2>Negros Occidental High School</h2>
+    <address>Araneta Street / Paglaum Road<br>Bacolod City, Negros Occidental 6100<br>Phone: <a href="tel:+63344339377">+63 34 433 9377</a> / <a href="tel:+63344337506">+63 34 433 7506</a><br><a href="mailto:nohsbacolod@yahoo.com">nohsbacolod@yahoo.com</a></address>
+   </div>
+   <nav aria-label="Quick links">
+    <h2>Quick links</h2>
+    <ul>
+     <li><a href="contact.html">Enrollment Portal</a></li>
+     <li><a href="index.html#academics">Academic Programs</a></li>
+     <li><a href="index.html#news">News and Announcements</a></li>
+     <li><a href="gallery.html">Photo Gallery</a></li>
+     <li><a href="contact.html">Student / Faculty Log In</a></li>
+    </ul>
+   </nav>
+   <div>
+    <h2>Follow NOHS</h2>
+    <div class="social">
+     <a href="#" aria-label="Facebook">f</a>
+     <a href="#" aria-label="YouTube">yt</a>
+     <a href="#" aria-label="Instagram">ig</a>
+    </div>
+   </div>
+  </div>
+  <div class="legal">
+   <span>© 2026 Negros Occidental High School. All rights reserved.</span>
+   <span><a href="#">Privacy notice</a> &nbsp; <a href="#">Accessibility</a></span>
+  </div>
+ </div>
+</footer>
+
+
+
+
+
+
+
+<script>window.NOHS_MULTI=true;</script>
+
+<script src="assets/nohs.js"></script>
+<script src="assets/gallery.js"></script>
+</body></html>
